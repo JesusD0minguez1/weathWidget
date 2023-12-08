@@ -1,0 +1,16 @@
+<div *ngIf="day" class="weather-box">
+    <div>
+        <div>
+            <h1>{{day.day}}</h1>
+            <img src="{{'http://openweathermap.org/img/wn/' + day.icon +'.png'}}" alt="iconWeather"/>
+            <h2 id="desc">{{day.description}}</h2>
+        </div>
+        <ul>
+            <li><h2>Temp: {{day.temp + '&deg; F'}}</h2></li>
+            <li>Max temp: {{day.temp_max + '&deg; F'}}</li>
+            <li>Min temp: {{day.temp_min + '&deg; F'}}</li>
+            <li>Pressure: {{day.pressure}}</li>
+            <li>Humidity: {{day.humidity}}</li>
+        </ul>
+    </div>
+</div>
